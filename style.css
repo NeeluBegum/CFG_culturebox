@@ -1,1 +1,21 @@
-%this is the styling document
+/* Font */
+Body {
+  font-family:serif;
+}
+
+/* Social icons style */
+  ul.social-icons {
+      text-align: center;
+  }
+  ul.social-icons li {
+      display:inline-block;
+      list-style-type:none;
+  }
+  ul.social-icons li a {
+      border-bottom: none;
+  }
+  ul.social-icons li img {
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+  }
