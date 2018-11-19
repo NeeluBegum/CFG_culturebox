@@ -8,78 +8,176 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
+<style>
+  img {
+  width: 1300px
+  }
+
+  /* Social icons style */
+  ul.social-icons {
+      text-align: center;
+  }
+  ul.social-icons li {
+      display:inline-block;
+      list-style-type:none;
+  }
+  ul.social-icons li a {
+      border-bottom: none;
+  }
+  ul.social-icons li img {
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+  }
+  /* Navbar style */
+  ul.nav li {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin: 0 auto;
+  }
+  nav {
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  }
+  nav a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  justify-content: space-between;
+  display: flex;
+  padding: 10px 10px;
+  max-width: 700px;
+  }
+  nav a:hover {
+  background-color: white;
+  color: black;
+  }
+  /* Welcome section */
+  h1 {
+  font-size:50px;
+  }
+  h3 {
+  font-size:20px
+  }
+  /* Country names */
+  div.grid-container {
+  display: inline-grid;
+  }
+
+  div#countrynames {
+  font-size: 40px;
+  font-family: sans-serif;
+  }
+  form {
+  margin: 1rem -15px 0;
+  border: solid #f7f7f9;
+  position: relative;
+  padding: 1.5rem;
+  margin-right: 0;
+  margin-left: 0;
+  border-width: .2rem;
+  }
+  div.form-group {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  }
+
+  label {
+  font-size: 15px;
+  font-family: sans-serif;
+  }
+
+  input {
+  font-size: 15px;
+  font-family: sans-serif;
+  height: 20%;
+  width: 50%;
+  }
+
+</style>
+
 <body>
-  <!--This is the navigation bar-->
-  <div class="navbar">
-    <nav>
-      <ul class="nav">
-        <li class="Home"> <a href="./homepage.html">Home</a></li>
-        <li class="About"> <a href="./about.html">About</a></li>
-        <li class="Contact"><a href="./about.html">Contact</a></li>
-        <li class="Submit"><a href="./submit.html">Submit your work</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <!--Welcome section-->
-  <section id="section1" class="Welcome">
-    <div class="container1">
-      <h1>THE CULTURE BOX</h1>
-      <h3>Click the map to explore</h3>
+  <!--Navigation bar-->
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <div class="col-md-6">
+      <a class="navbar-brand" href="./homepage.html">The Culture Box</a>
     </div>
-  </section>
-
-<!--WorldMap-->
-<div id="displaymap" class="displaymap">
-<img src="./worldmap_Neelu.png" class="worldmap">
-</div>
-
-<!--About us section -->
-<section id="section2" class="Aboutus">
-  <div class="container2">
-    <h2>About us</h2>
-    <p> If you've ever been introduced to someone from another country and thought "I don't know anything about their country", then you know why we wanted to start The Culture Box.</p>
-    <p> The Box helps you learn about a country's famous authors, artists, historians, landmarks, cuisine, and many more. So if you don't know about Senegal's literature scene, this is the place to go!</p>
-    <p> We've tried to include as many different sides to culture as possible, from food to famous authors to landmarks. If you want to contribute something about a country you know well, like your favourite singer, we'd love to hear from you! Click on "Submit your work" to find out more about general guidelines and submit your piece.</p>
-  </div>
-</section>
-
-<!--Contact us section -->
-<section id="section3" class="Contactus">
-  <div class="container3">
-    <h2> Contact us</h2>
-    <h4> Stay in touch to get culture updates and let us know what you think in a message below!</h4>
-    <label for="email">Email:</label>
-    <input type="text" class="form-control" placeholder="Email">
-    <label for"msg">Message:</label>
-    <input type="text" class="message" rows="3" placeholder="Message">
-    <button type="submit" class="subscribe-btn"> Subscribe </button>
-  </div>
-  <!--Social media links-->
-  <div class="socialmedia">
-    <ul class="social-icons">
-      <li> <a href="http://www.facebook.com"><img src="./facebook_logo.png"/></a></li>
-      <li> <a href="http://www.twitter.com"><img src="./twitter_logo.png" /></a></li>
-      <li> <a href="http://www.youtube.com"><img src="./youtube_logo.png"/></a></li>
+    <!-- <div class="col-md-6"> -->
+      <!-- <h2 class="descrip"> Exploring cultures at a click </h2> -->
+    <!-- </div> -->
+    <ul class="nav">
+      <li class="Home"> <a href="./homepage.html">Home</a></li>
+      <li class="About"> <a href="./about.html">About</a></li>
+      <li class="Contact"><a href="./about.html">Contact</a></li>
+      <li class="Submit"><a href="./submit.html">Submit your work</a></li>
     </ul>
+  </nav>
+
+<!--Welcome section-->
+  <section id="section1" class="Welcome">
+  <div class="container1">
+    <h3>Click to explore</h3>
   </div>
 </section>
 
-<!--Submit section-->
-<section id="section4" class="Submit">
-  <div class="container4">
-    <h2> Submit your work!</h2>
-    <p> Have something to contribute? We'd love to hear from you! The guidelines are simple: write a few sentences (ideally a short paragraph or more if you need) about an aspect of a culture you're familiar with. You don't need to be from that country to tell us about it but it'd be great if you have some connection (maybe you speak the language or you love the singer who's from there). Don't forget to include a picture!</p>
-    <!--Your name-->
-    <!--Pick a category: Art, Music, Literature, Food, Landmarks-->
-    <!--Give a quick bio or background story for this artist, author, etc.-->
-    <!--Submit-->
-    <!--After Submit button clicked: Thank you for your submission-->
+  <!--WorldMap and country names-->
+  <div class="container-fullpage">
+    <div class="col-md-4 col-sm-12 mobileheight img1">
+    <a class="country-link" href="#France#">
+      <div class="countryname">
+        <h1>France</h1>
+      </div>
+    </a>
   </div>
-</section>
-
+    <div class="col-md-4 col-sm-12 mobileheight img2">
+    <a class="country-link" href="./China.html">
+      <div class="countryname">
+      <h1>China</h1>
+      </div>
+    </a>
+  </div>
+    <div class="col-md-4 col-sm-12 mobileheight img3">
+    <a class="country-link" href="#Senegal">
+      <div class="countryname">
+      <h1>Senegal</h1>
+      </div>
+    </a>
+  </div>
+    <div class="col-md-4 col-sm-12 mobileheight img4">
+    <a class="country-link" href="#Senegal">
+      <div class="countryname">
+      <h1>Senegal</h1>
+      </div>
+    </a>
+  </div>
+    <div class="col-md-4 col-sm-12 mobileheight img5">
+    <a class="country-link" href="#Senegal">
+      <div class="countryname">
+      <h1>Senegal</h1>
+      </div>
+    </a>
+  </div>
+    <div class="col-md-4 col-sm-12 mobileheight img6">
+    <a class="country-link" href="#Senegal">
+      <div class="countryname">
+      <h1>Senegal</h1>
+      </div>
+    </a>
+  </div>
 
 </body>
 </html>
