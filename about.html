@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Culture Box</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<!-- Latest compiled and minified JavaScript -->
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link href="style.css" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
+      <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
+    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
+    <!-- Link to CSS Stylesheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Link to Javascript -->
+    <script src="​https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js​"></script>
+    <!-- Latest compiled Bootstrap JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
 
-  <body>
-    <header id="CULTUREBOX">
-      <div class= "inner">
-        <div class="logo">
-          <a href="https://github.com/Nemonaitor/CFG_culturebox.git"><img src="./logo.png"></a>
-          <div class= "tagline">Find out more about us</div>
-        </div>
-        <div class="menu">
-          <ul>
-            <li class = "mobile">
-              <button class="js-dropdown-button dropdown-button"><a href="./Homepage.html"><img src="./mobile.png"></a></button>
-                <div class="dropdown-menu js-dropdown-menu" style="display: block;">
-                  <a href="./homepage.html">Homepage</a>
-                  <a href="./about.html">About</a><
-                  <a href="./about.html">Contact</a>
-                  <a href="./submit.html">Submit your work</a>
-                </div>
-              </li>
-            </ul>
-
-
-            </li>
-            <li class = "backbutton">
-              <a href="./Homepage.html"><img src="./back_button.png"></a>
-            </li>
-          </ul>
+<style>
+  img#logo {
+    width: 30px;
+    height: 30px;
+  }
+</style>
+<body>
+  <div class="navbar">
+    <!-- Logo -->
+    <div id="logodiv" class="inner">
+      <a href="https://github.com/Nemonaitor/CFG_culturebox.git"><img id="logo" src="./logo.png"></a>
+      <div class= "tagline">Find out more about us</div>
+    </div>
+    <!-- Dropdown menu -->
+     <!-- <button class="js-dropdown-button dropdown-button"><a href="./Homepage.html"><img src="./mobile.png"></a></button> -->
+     <button class="js-dropdown-button dropdown-button" onclick="myFunction()"><img src="./mobile.png"></button>
+      <div class="dropdown-menu">
+        <div class="dropdown-content">
+          <a href="./homepage.html">Homepage</a>
+          <a href="./about.html">About</a>
+          <a href="./about.html">Contact</a>
+          <a href="./submit.html">Submit your work</a>
         </div>
       </div>
-    </header>
+    <!--Back button -->
+      <div class="backbutton">
+      <a href="./Homepage.html"><img src="./back_button.png"></a>
+      </div>
+    </div>
 
     <!--About us section -->
     <section id="section2" class="Aboutus">
@@ -82,6 +85,39 @@
         </ul>
       </div>
     </section>
-
   </body>
-</html>
+  </html>
+
+
+
+<!--
+  <header id="CULTUREBOX">
+    <div class= "inner">
+      <div class="logo">
+        <a href="https://github.com/Nemonaitor/CFG_culturebox.git"><img src="./logo.png"></a>
+        <div class= "tagline">Find out more about us</div>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li class = "mobile">
+            <button class="js-dropdown-button dropdown-button"><a href="./Homepage.html"><img src="./mobile.png"></a></button>
+            <div class="dropdown-menu">
+            <button class="js-dropdown-button dropdown-button" onclick="myFunction()"><a href="./Homepage.html"><img src="./mobile.png"></a></button>
+              <div class="dropdown-content">
+                <a href="./homepage.html">Homepage</a>
+                <a href="./about.html">About</a>
+                <a href="./about.html">Contact</a>
+                <a href="./submit.html">Submit your work</a>
+              </div>
+          </div>
+
+          </li>
+          <li class = "backbutton">
+            <a href="./Homepage.html"><img src="./back_button.png"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+-->
