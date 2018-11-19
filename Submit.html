@@ -1,1 +1,64 @@
+<!DOCTYPE>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit</title>
+  <link rel=”stylesheet” href=”css/styles.css”>
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <title>Culture Box</title>
+</head>
 
+<body>
+<!--Submit section-->
+<section id="Submit" class="container">
+  <div class="container">
+    <h2> Submit your work!</h2>
+    <p> Have something to contribute? We'd love to hear from you! The guidelines are simple: write a few sentences (ideally a short paragraph or more if you need) about an aspect of a culture you're familiar with. You don't need to be from that country to tell us about it but it'd be great if you have some connection (maybe you speak the language or you love the singer who's from there). Don't forget to include a picture!</p>
+    <!--Your name-->
+  <form>
+    <div class="form-group">
+      <label for"msg">Your name:</label>
+        <div class="row">
+          <input type="text" class="form-control" placeholder="First name or Anynomous">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name or Anonymous">
+        </div>
+      </form>
+    </div>
+
+      <input type="text" class="message" rows="3" placeholder="e.g. John Smith or Anonymous">
+    </div>
+    <!--Pick a category: Art, Music, Literature, Food, Landmarks-->
+    <div class="form-group">
+      <label for"category">Pick a category</label>
+      <select class="form-control" id="category">
+        <option>--</option>
+        <option>Art</option>
+        <option>Music</option>
+        <option>Literature</option>
+        <option>Food</option>
+        <option>Landmarks</option>
+      </select>
+    </div>
+    <!--Give a quick bio or background story for this artist, author, etc.-->
+    <div class="form-group">
+      <label for"bio">Give a quick bio or background story for this artist, author, etc.</label>
+      <input type="text" class="message" rows="3" placeholder="People should know about this because...">
+    </div>
+    <!--Submit-->
+    <div class="form-group">
+      <button type="submit" class="subscribe-btn"> Subscribe </button>
+    </div>
+    <!--After Submit button clicked: Thank you for your submission-->
+  </form>
+  </div>
+</section>
+
+</body>
+</html>
