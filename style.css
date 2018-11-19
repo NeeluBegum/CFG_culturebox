@@ -1,1 +1,100 @@
-%this is the styling document
+/* Font */
+Body {
+  font-family:serif;
+}
+/* Worldmap dimensions */
+img.worldmap {
+  width:1430px;
+}
+
+/* Body */
+body {
+  font-family: monospace;
+}
+
+/* Social icons style */
+  ul.social-icons {
+      text-align: center;
+  }
+  ul.social-icons li {
+      display:inline-block;
+      list-style-type:none;
+  }
+  ul.social-icons li a {
+      border-bottom: none;
+  }
+  ul.social-icons li img {
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+  }
+
+/* Navbar style */
+ul.nav li {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+nav {
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+}
+nav a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  justify-content: space-between;
+  display: flex;
+  padding: 10px 10px;
+  max-width: 700px;
+}
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Welcome section */
+h1 {
+  font-size:50px;
+}
+h3 {
+  font-size:20px
+}
+/* Social icons style */
+  ul.social-icons {
+      text-align: center;
+  }
+  ul.social-icons li {
+      display:inline-block;
+      list-style-type:none;
+  }
+  ul.social-icons li a {
+      border-bottom: none;
+  }
+  ul.social-icons li img {
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+  }
+
+  ul li:not(:last-child) {
+    border-right: 1px solid grey;
+    margin-right:20px;
+    padding-right:20px;
+  }
+
+/* Aboutus section */
+header.CULTURE_BOX; {
+  padding: 0px;
+  position: absolute;
+  left: 100px;
+  top: 150px;
+  max-width: 150px;
+  background-color: gold;
+
+}
