@@ -90,12 +90,17 @@ h3 {
   }
 
 /* Aboutus section */
-header#CULTUREBOX; {
-  padding: 0px;
-  position: absolute;
-  left: 100px;
-  top: 150px;
-  max-width: 150px;
-  background-color: gold;
+#CULTUREBOX > div > div.logo > a > img {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  max-width:  inherit;
+  height: inherit;
+  margin: 0 auto;
+}
 
+#CULTUREBOX > div > div.menu > li > a > img {
+  align-items: right;
 }
