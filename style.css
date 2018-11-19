@@ -89,7 +89,7 @@ h3 {
   }
 
 /* Aboutus section */
-header.CULTURE_BOX; {
+header#CULTUREBOX; {
   padding: 0px;
   position: absolute;
   left: 100px;
