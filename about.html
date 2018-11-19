@@ -17,7 +17,6 @@
 <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-
 <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
@@ -34,7 +33,17 @@
         <div class="menu">
           <ul>
             <li class = "mobile">
-              <a href="./Homepage.html"><img src="./mobile.png"></a>
+              <button class="js-dropdown-button dropdown-button"><a href="./Homepage.html"><img src="./mobile.png"></a></button>
+                <div class="dropdown-menu js-dropdown-menu" style="display: block;">
+                  <a href="./homepage.html">Homepage</a>
+                  <a href="./about.html">About</a><
+                  <a href="./about.html">Contact</a>
+                  <a href="./submit.html">Submit your work</a>
+                </div>
+              </li>
+            </ul>
+
+
             </li>
             <li class = "backbutton">
               <a href="./Homepage.html"><img src="./back_button.png"></a>
