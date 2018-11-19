@@ -88,3 +88,14 @@ h3 {
     margin-right:20px;
     padding-right:20px;
   }
+
+/* Aboutus section */
+header.CULTURE_BOX; {
+  padding: 0px;
+  position: absolute;
+  left: 100px;
+  top: 150px;
+  max-width: 150px;
+  background-color: gold;
+
+}
