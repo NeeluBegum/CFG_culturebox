@@ -49,45 +49,12 @@
     background-color: #f2f2f2;
   }
 
-  /*Click to Explore */
-  section#firstsection {
-    padding-top: 35px;
-    padding-bottom: 30px;
+  h2 {
+    font-size: 25px;
   }
 
-  /* Country Selection */
-  .mobileheight {
-    height: 350px;
-    padding: 0;
-    background-size: cover;
-    background-position: center;
-  }
-  .countryname {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  a.country-link {
-    width: 100%;
-    height: 100%;
-    display: block;
-    background: rgba(0,0,0,0.5);
-    color: white;
-    transition: 0.3s all ease;
-  }
-  a.country-link:hover {
-    background: rgba(0,0,0,0.7);
-  }
-  .img1 {
-    background-image: url(./Paris.png);
-  }
-  .img2 {
-    background-image: url(./China.png)
-  }
-  .img3 {
-   background-image: url(Brazil.png);
+  p {
+    font-size: 15px;
   }
 
   /* Social media icons */
@@ -100,11 +67,53 @@
     font-size: 20px;
   }
 
+  section#submit {
+  padding-top:30px;
+  text-align: left;
+  }
+
+  input#firstname {
+    width: 300px;
+  }
+  div.name {
+    align-items: left;
+    padding-top: 60px;
+  }
+
+  div#categoryform {
+  padding-top: 30px;
+  }
+
+  select#category {
+    width: 300px;
+  }
+
+  div#bioform {
+    padding-top: 30px;
+    text-align: left;
+  }
+
+  div#biodiv {
+  align-items: left;
+  }
+
+  input#bio {
+    width: 600px;
+    height: 200px;
+    align-items: left;
+    text-align: left;
+  }
+
+  button {
+    color: black;
+    text-decoration: none;
+    align-items: center;
+  }
+
 </style>
 
 <body>
-  <!-- HEADER -->
-  <!--Navigation bar-->
+  <!-- HEADER and navigation bar -->
   <header>
     <div id="header" class="container">
       <div class="inner">
@@ -112,70 +121,62 @@
       </div>
       <div class="topnav">
           <ul>
-            <a class="active" href="./index3.html">Home</a>
+            <a class="active" href="./homepage.html">Home</a>
             <a href="./about.html">About</a>
             <a href="./about.html">Contact</a>
             <a href="./submit.html">Submit your work</a>
-            <a href="./index31.html">Welcome</a>
           </ul>
       </div>
     </div>
   </header>
 
-  <!-- AFTER HEADER-->
-  <div class="container">
-  <section id="firstsection">
+
+  <!--Submit section-->
+  <section id="Submit" class="container">
     <div class="container">
-      <h3>Click to explore</h3>
+      <h2> Submit your work!</h2>
+      <p> Have something to contribute? We'd love to hear from you! The guidelines are simple: write a few sentences (ideally a short paragraph or more if you need) about an aspect of a culture you're familiar with. You don't need to be from that country to tell us about it but it'd be great if you have some connection (maybe you speak the language or you love the singer who's from there). Don't forget to include a picture!</p>
+    </div>
+    <!--Your name-->
+    <form>
+      <div class="form-group">
+        <div id="name" class="container">
+        <label for"msg">Your name:</label>
+          <div class="row">
+            <input id="firstname" type="text" class="form-control" placeholder="Name or Anynomous">
+          </div>
+        </div>
+      </div>
+    </form>
+
+      <!--Pick a category: Art, Music, Literature, Food, Landmarks-->
+      <div id="categoryform" class="form-group">
+        <label for"category">Pick a category</label>
+        <select class="form-control" id="category">
+          <option>--</option>
+          <option>Art</option>
+          <option>Music</option>
+          <option>Literature</option>
+          <option>Food</option>
+          <option>Landmarks</option>
+        </select>
+      </div>
+
+      <!--Give a quick bio or background story for this artist, author, etc.-->
+      <div id="bioform" class="form-group">
+        <label for"bio">Give a quick bio or background story for this artist, author, etc.</label>
+        <div id="biodiv" class="container">
+        <input id="bio" type="text" class="message" rows="3" placeholder="People should know about this because...">
+        </div>
+      </div>
+
+      <!--Submit-->
+      <div class="form-group">
+        <button type="submit" class="subscribe-btn"> Submit </button>
+      </div>
+    </form>
     </div>
   </section>
-
-  <!--WorldMap and country names-->
-  <div class="container">
-    <div class="col-md-4 col-sm-12 mobileheight img1">
-      <a class="country-link" href="./France.html">
-        <div class="countryname">
-          <h1>France</h1>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-4 col-sm-12 mobileheight img2">
-    <a class="country-link" href="./China2.html">
-      <div class="countryname">
-        <h1>China</h1>
-      </div>
-    </a>
-    </div>
-    <div class="col-md-4 col-sm-12 mobileheight img3">
-      <a class="country-link" href="./Brazil.html">
-        <div class="countryname">
-          <h1>Brazil</h1>
-        </div>
-      </a>
-    </div>
-  </div>
-  <!-- <div class="col-md-4 col-sm-12 mobileheight img4"> -->
-      <!-- <a class="country-link" href="#Senegal"> -->
-        <!-- <div class="countryname"> -->
-          <!-- <h1>Senegal</h1> -->
-        <!-- </div> -->
-      <!-- </a> -->
-    <!-- </div> -->
-  <!-- <div class="col-md-4 col-sm-12 mobileheight img5"> -->
-      <!-- <a class="country-link" href="#Senegal"> -->
-        <!-- <div class="countryname"> -->
-          <!-- <h1>Senegal</h1> -->
-        <!-- </div> -->
-      <!-- </a> -->
-    <!-- </div> -->
-  <!-- <div class="col-md-4 col-sm-12 mobileheight img6"> -->
-      <!-- <a class="country-link" href="#Senegal"> -->
-        <!-- <div class="countryname"> -->
-          <!-- <h1>Senegal</h1> -->
-        <!-- </div> -->
-      <!-- </a> -->
-    <!-- </div> -->
-  </div>
 
   <!-- Social media icons -->
   <footer>
