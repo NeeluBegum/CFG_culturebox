@@ -1,0 +1,187 @@
+<!DOCTYPE>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culture Box</title>
+  <link rel=”stylesheet” href=”css/styles.css”>
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmaxcdn.bootstrapcdn.com%2Fbootstrap%2F3.3.7%2Fcss%2Fbootstrap.min.css&amp;data=01%7C01%7Cneelu.begum%40kcl.ac.uk%7Cfdeba9c7a7d948e31a8408d653cc2704%7C8370cf1416f34c16b83c724071654356%7C0&amp;sdata=6J5m8uTIHRIvX5L691gdiTeJdo1pLwYj0HJjNYNdSEQ%3D&amp;reserved=0" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+  <link rel="stylesheet" href="https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmaxcdn.bootstrapcdn.com%2Fbootstrap%2F3.3.7%2Fcss%2Fbootstrap-theme.min.css&amp;data=01%7C01%7Cneelu.begum%40kcl.ac.uk%7Cfdeba9c7a7d948e31a8408d653cc2704%7C8370cf1416f34c16b83c724071654356%7C0&amp;sdata=8xMTEKpn9t8LeKd03pcutasb0vmXA0%2FbYBsckmOT3ak%3D&amp;reserved=0" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmaxcdn.bootstrapcdn.com%2Fbootstrap%2F3.3.7%2Fjs%2Fbootstrap.min.js&amp;data=01%7C01%7Cneelu.begum%40kcl.ac.uk%7Cfdeba9c7a7d948e31a8408d653cc2704%7C8370cf1416f34c16b83c724071654356%7C0&amp;sdata=WN7A3fvaPv7Ar14kQBV0Ldn1v5USBjhIZE9p1x%2F5Zpc%3D&amp;reserved=0" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcdnjs.cloudflare.com%2Fajax%2Flibs%2Ffont-awesome%2F4.7.0%2Fcss%2Ffont-awesome.min.css&amp;data=01%7C01%7Cneelu.begum%40kcl.ac.uk%7Cfdeba9c7a7d948e31a8408d653cc2704%7C8370cf1416f34c16b83c724071654356%7C0&amp;sdata=Bkb0EJh0uWubws3Wwkz1RjMxPqQRInruKPoRTyIHscU%3D&amp;reserved=0">
+  <title>Culture Box</title>
+</head>
+
+<style>
+
+  /* HEADER */
+  header {
+    background: #8c8c8c;
+    padding-top: 50px;
+    text-align: left;
+    margin-top: -40px;
+  }
+
+  /* NAVBAR */
+  div.topnav {
+    overflow: hidden;
+    justify-content: space-between;
+  }
+  div.topnav a{
+    float: right;
+    color: hsla(0, 0%, 100%, 0.86);
+    text-decoration: none;
+    font-size: 17px;
+    justify-content: space-between;
+    display: flex;
+    padding: 10px 60px;
+    max-width: 700px
+  }
+  div.topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+
+  /* Background to body */
+  body {
+    background-color: #f2f2f2;
+  }
+
+  /* Title */
+  div#France h1 {
+    text-align: center;
+    color: 	#008B8B;
+    font-size: 50px;
+    padding-top: 30px;
+  }
+
+  div#categories {
+    padding-left: 70px;
+  }
+
+  /* Images */
+  img#maupassant {
+    float: left;
+    width: 200px;
+    height: 250px;
+  }
+
+  img#colette {
+    float: left;
+    width: 200px;
+    height: 250px;
+  }
+
+  img#bb {
+    float: left;
+    width: 200px;
+    height: 150px;
+  }
+
+  img#m {
+    float: left;
+    width: 200px;
+    height: 250px;
+  }
+
+  /* spacing between the sections */
+  div#goodfood {
+    padding-top: 30px;
+  }
+
+  div#singers {
+    padding-top: 30px;
+  }
+
+  /* paragraph and header styles */
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 15px;
+    padding-top: 30px;
+    padding-left: 250px;
+    width: 850px;
+    }
+
+  /* Social media icons */
+  div.socialmedia {
+    padding-top: 75px;
+    align-items: center;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+  }
+
+</style>
+
+<body>
+  <!-- HEADER and navigation bar -->
+  <header>
+    <div id="header" class="container">
+      <div class="inner">
+        <h1>The Culture Box</h1>
+      </div>
+      <div class="topnav">
+          <ul>
+            <a class="active" href="./index3.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./about.html">Contact</a>
+            <a href="./submit.html">Submit your work</a>
+            <a href="./index31.html">Welcome</a>
+          </ul>
+      </div>
+    </div>
+  </header>
+
+  <div id="France" class="container">
+    <h1> France </h1>
+  </div>
+
+  <div id="categories" class="container">
+  <!-- AUTHORS -->
+    <div class="container">
+      <h2>Famous Authors</h2>
+      <h4>Guy de Maupassant</h4>
+        <img id="maupassant" src="./maupassant.png" alt="an image of Guy de Maupassant" class="img-thumbnail">
+        <p>This 19th century French writer is best-known for being the master of short stories. One of his most famous and internationally-acclaimed books is <i><b>"Boule de Suif"</b></i>, although we would also highly recommend  <i><b>"Bel Ami"</b></i>. </p>
+    </div>
+
+    <div class="container">
+      <h4>Colette</h4>
+        <img id="colette" src="./colette.png" class="img-thumbnail">
+        <p>Nominated for the Nobel Prize in Literature in 1948, Colette was an actress, journalist, novelist, and (interestingly) a French mime. Made a Grand Officier de la Légion d'Honneur (one of the highest honours in France) in 1953, she is best known for her novel <i><b>"Gigi"</b></i>, but also for <i><b>"Claudine à l'école"</b></i> (Claudine at School), which was one of her first novels (published in 1900). One of her greatest quotations was : <i>"You will do foolish things, but do them with enthusiasm"</i>. If you're interested, a live-action film about her life (where she is protrayed by Keira Knigthley) recently came out.</p>
+    </div>
+
+    <!--FOOD -->
+    <div id="goodfood" class="container">
+    <h2>Good food</h2>
+      <h4>Boeuf Bourguignon</h4>
+        <img id="bb" src="./bb.png" class="img-thumbnail">
+        <p>This stew is perfect for winter. Usually made with beef, red wine, onions, and carrots, it was first documented in the 19th century and has become a staple of Parisian bistrots.</p>
+    </div>
+
+    <!-- SINGERS -->
+    <div id="singers" class="container">
+      <h2>Singers</h2>
+        <h4>Matthieu Chédid</h4>
+        <img id="m" src="./m.png" class="img-thumbnail">
+        <p>Better known as "-M-" (his stage name), Matthieu Chédid comes from a very artistic family and has been performing hits since the late 1990s. His more well-known songs include <i><b>"Je dis aime"</b></i>, <i><b>"Onde Sensuelle"</b></i>, and <i><b>"Mama Sam"</b></i>. He recently announced the release of his newest album ("Lettre infinie"), which will be released in 2019.</p>
+    </div>
+
+  </div>
+  <!-- Social media icons -->
+  <footer>
+    <div class="socialmedia">
+      <a class="btn-floating btn-lg btn-fb" type="button" role="button" href="https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.facebook.com&amp;data=01%7C01%7Cneelu.begum%40kcl.ac.uk%7Cfdeba9c7a7d948e31a8408d653cc2704%7C8370cf1416f34c16b83c724071654356%7C0&amp;sdata=FdAG2cUAkQ3cV4XpxJbONXNFE%2BqRU3wF%2BaWP0MvuVGQ%3D&amp;reserved=0"><i class="fa fa-facebook"></i></a>
+      <a class="tw-ic mr-3" role="button" href="https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.twitter.com&amp;data=01%7C01%7Cneelu.begum%40kcl.ac.uk%7Cfdeba9c7a7d948e31a8408d653cc2704%7C8370cf1416f34c16b83c724071654356%7C0&amp;sdata=LR0Y9ERMfapd%2F9aeF8EQmXmzS%2B7N6XNUVMwyK6e5e3w%3D&amp;reserved=0"><i class="fa fa-lg fa-twitter"></i></a>
+      <a class="btn-floating btn-lg btn-ins" type="button" role="button" href="https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.instagram.com&amp;data=01%7C01%7Cneelu.begum%40kcl.ac.uk%7Cfdeba9c7a7d948e31a8408d653cc2704%7C8370cf1416f34c16b83c724071654356%7C0&amp;sdata=U9rfKixOLsks5lOFIh7TNBA09kXqHLa4RR7ponVaQzQ%3D&amp;reserved=0"><i class="fa fa-instagram"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
