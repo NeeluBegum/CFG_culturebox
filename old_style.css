@@ -94,15 +94,10 @@ h3 {
   font-size: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0px 10px;
-  max-width:  inherit;
-  height: inherit;
-  margin: 0 auto;
 }
 
 #CULTUREBOX > div > div.menu > li > a > img {
-  align-items: right;
+  align-items: centre;
 }
 
 #CULTUREBOX > div > div.nav-menu > nav > ul > li > div {
@@ -111,7 +106,7 @@ h3 {
       padding: 10px 20px;
       background-color: #061f3a;
       color: #f0b5a8;
-      font-size: 15px;
+      font-size: 100px;
       border-radius: 0;
       border: 0;
       border-bottom: solid #99e9ff 3px;
